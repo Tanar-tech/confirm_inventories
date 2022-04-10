@@ -13,6 +13,16 @@ npx serverless --version
 ```
 
 ## ■Project作成
+* serverless-plugin-typescriptを利用
+  * 参考
+    https://team-6.hatenablog.jp/entry/2021/02/14/210839
+
+
+
+
+* 下記は利用しない。
+  * middy/sourceMapへの依存があり、利用しにくい。
+  * serverless.ymlがtsファイルに置き換わっており、可読性が低い
 ```sh
 npx serverless create --template aws-nodejs-typescript --path ci-api
 cd ci-api

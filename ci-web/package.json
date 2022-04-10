@@ -1,0 +1,19 @@
+{
+  "name": "ci-web",
+  "version": "1.0.0",
+  "description": "下記の仕組みを実装する 1. ユーザに端末確認を行うUIを提供する",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8"
+  },
+  "dependencies": {
+    "@types/node": "^14.18.12",
+    "typescript": "^4.6.3"
+  }
+}

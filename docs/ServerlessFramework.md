@@ -12,6 +12,13 @@ npx serverless --version
   > SDK: 4.3.2 
 ```
 
+## ■Project作成
+```sh
+npx serverless create --template aws-nodejs-typescript --path ci-api
+cd ci-api
+npm install
+```
+
 ## ■Invoke / Deploy
 * Invoke
 ```sh
@@ -27,6 +34,13 @@ npx sls deploy --verbose --region ap-northeast-1
 ```sh
 # S3のバケットの中身、DynamoDBのデータなど、あらかじめ削除しておく。
 npx serverless remove --verbose --region ap-northeast-1
+```
+
+## ■Local開発
+[Serverless Frmamework](https://www.serverless.com/plugins/serverless-offline)
+> This Serverless plugin emulates AWS λ and API Gateway on your local machine to speed up your development cycles. To do so, it starts an HTTP server that handles the request's lifecycle like APIG does and invokes your handlers.
+```sh
+npm install -D serverless-offline
 ```
 
 ## ■その他Tips
